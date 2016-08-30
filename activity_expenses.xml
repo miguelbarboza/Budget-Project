@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addExpenseSecondScreen"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_expense"
+        android:layout_marginBottom="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Spent:"
+        android:id="@+id/totalSpentLbl"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_toLeftOf="@+id/addExpenseSecondScreen"
+        android:layout_toStartOf="@+id/addExpenseSecondScreen" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/moneySpent"
+        android:layout_alignBottom="@+id/totalSpentLbl"
+        android:layout_toRightOf="@+id/totalSpentLbl"
+        android:layout_marginLeft="15dp"
+        android:textColor="#f11010"
+        android:layout_marginRight="15dp"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/personalCheckbox"
+        android:id="@+id/personalCheckBox"
+        android:layout_alignTop="@+id/commuteCheckBox"
+        android:layout_alignLeft="@+id/spentOnLbl"
+        android:layout_alignStart="@+id/spentOnLbl" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/commuteCheckbox"
+        android:id="@+id/commuteCheckBox"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/funCheckBox"
+        android:layout_alignLeft="@+id/funCheckBox"
+        android:layout_alignStart="@+id/funCheckBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/billsCheckbox"
+        android:id="@+id/billsCheckBox"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/personalCheckBox"
+        android:layout_alignStart="@+id/personalCheckBox"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/funCheckbox"
+        android:id="@+id/funCheckBox"
+        android:layout_above="@+id/workCheckBox"
+        android:layout_alignLeft="@+id/foodCheckBox"
+        android:layout_alignStart="@+id/foodCheckBox"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/workCheckbox"
+        android:id="@+id/workCheckBox"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/billsCheckBox"
+        android:layout_alignLeft="@+id/billsCheckBox"
+        android:layout_alignStart="@+id/billsCheckBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/foodCheckbox"
+        android:id="@+id/foodCheckBox"
+        android:layout_alignTop="@+id/workCheckBox"
+        android:layout_alignLeft="@+id/moneySpent"
+        android:layout_alignStart="@+id/moneySpent"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spent On:"
+        android:id="@+id/spentOnLbl"
+        android:textSize="15dp"
+        android:layout_below="@+id/moneySpent"
+        android:layout_alignLeft="@+id/totalSpentLbl"
+        android:layout_alignStart="@+id/totalSpentLbl"
+        android:layout_marginTop="51dp" />
+
+</RelativeLayout>

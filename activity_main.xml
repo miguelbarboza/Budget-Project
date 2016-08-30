@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addExpenseMainScreen"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_expense"
+        android:layout_marginBottom="121dp"
+        android:onClick="expenseClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp" />
+
+    <Button
+        android:id="@+id/addIncomeMainScreen"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_income"
+        android:onClick="incomeClick"
+        android:layout_alignTop="@+id/addExpenseMainScreen"
+        android:layout_alignLeft="@+id/budgetLabel"
+        android:layout_alignStart="@+id/budgetLabel"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/charts"
+        android:id="@+id/chartsMainScreen"
+        android:onClick="chartClick"
+        android:layout_alignTop="@+id/addIncomeMainScreen"
+        android:layout_toRightOf="@+id/addIncomeMainScreen"
+        android:layout_toEndOf="@+id/addIncomeMainScreen"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/budget"
+        android:id="@+id/budgetLabel"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/currentBudget"
+        android:text="0.00"
+        android:textAlignment="center"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        android:layout_below="@+id/budgetLabel"
+        android:layout_alignRight="@+id/chartsMainScreen"
+        android:layout_alignEnd="@+id/chartsMainScreen"
+        android:layout_marginTop="68dp"
+        android:layout_alignLeft="@+id/addExpenseMainScreen"
+        android:layout_alignStart="@+id/addExpenseMainScreen"
+        android:textSize="34sp" />
+
+</RelativeLayout>
